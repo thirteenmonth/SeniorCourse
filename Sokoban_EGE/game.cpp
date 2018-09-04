@@ -79,6 +79,10 @@ int gameloop(int level)
 	reValue = 0;
 	isEnd = 0;
 
+	//定义音乐对象
+	MUSIC mus;
+	mus.OpenFile("resources\\music\\Boxmove.wav"); // 打开文件
+
 	//读取地图
 	LoadMap(level,map);
 
@@ -236,6 +240,8 @@ int gameloop(int level)
 
 						lastStep_num = step_num;//记录上一次推箱子前所走的步数
 						step_num++;
+
+						mus.Play(0);//播放推动箱子的音频
 					}
 				}
 				else if (option == 'w') {//向上移动
@@ -268,6 +274,8 @@ int gameloop(int level)
 
 						lastStep_num = step_num;//记录上一次推箱子前所走的步数
 						step_num++;
+
+						mus.Play(0);//播放推动箱子的音频
 					}
 				}
 				else if (option == 'a') {//向左移动
@@ -300,6 +308,8 @@ int gameloop(int level)
 
 						lastStep_num = step_num;//记录上一次推箱子前所走的步数
 						step_num++;
+
+						mus.Play(0);//播放推动箱子的音频
 					}
 					break;
 				}
@@ -333,6 +343,8 @@ int gameloop(int level)
 
 						lastStep_num = step_num;//记录上一次推箱子前所走的步数
 						step_num++;
+
+						mus.Play(0);//播放推动箱子的音频
 					}
 				}
 				else if (option == 'u') {
@@ -430,6 +442,8 @@ int gameloop(int level)
 		if (isEnd)
 			break;
 	}
+
+	mus.Close(); // 关闭音频文件
 
 	delimage(pimg_wall);
 	delimage(pimg_land);

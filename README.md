@@ -107,6 +107,14 @@
 
 <br>
 
+简要流程框图：<br>
+
+<div align=center>
+  <img src="https://github.com/SiriYXR/SeniorCourse/blob/master/doc/README/sokoban_console/%E6%8E%A8%E7%AE%B1%E5%AD%90%E6%B5%81%E7%A8%8B%E5%9B%BE.png"/>
+</div>
+
+运行效果图：<br>
+
 <div align=center>
   <img src="https://github.com/SiriYXR/SeniorCourse/blob/master/doc/README/sokoban_console/1.png"/>
   <img src="https://github.com/SiriYXR/SeniorCourse/blob/master/doc/README/sokoban_console/2.png"/>
@@ -117,7 +125,28 @@
 
 ---
 ### Sokoban_EGE
-&emsp;&emsp;本项目修改自[Sokoban2.1](https://github.com/SiriYXR/Sokoban2.1)
+&emsp;&emsp;本项目修改自[Sokoban2.1](https://github.com/SiriYXR/Sokoban2.1)，采用新版Sokoban_Console算法架构，通过ege图形库实现图形界面显示，游戏音效等功能。
+
+代码文件：<br>
+
+|文件名|说明|
+|:---|:---|
+|[function.h](https://github.com/SiriYXR/SeniorCourse/blob/master/Sokoban_EGE/founction.h)|函数前置声明，全局变量声明|
+|[main.cpp](https://github.com/SiriYXR/SeniorCourse/blob/master/Sokoban_EGE/main.cpp)|定义程序入口main()函数|
+|[mainloop.cpp](https://github.com/SiriYXR/SeniorCourse/blob/master/Sokoban_EGE/mainloop.cpp)|实现消息循环，菜单界面等函数|
+|[game.cpp](https://github.com/SiriYXR/SeniorCourse/blob/master/Sokoban_EGE/game.cpp)|定义游戏循环，菜单界面，文件读取等函数|
+
+资源文件：<br>
+
+|文件/文件夹名|说明|
+|:---|:---|
+|[resources/map](https://github.com/SiriYXR/SeniorCourse/tree/master/Sokoban_EGE/resources/map)|地图文件|
+|[resources/image](https://github.com/SiriYXR/SeniorCourse/tree/master/Sokoban_EGE/resources/image)|贴图纹理文件|
+|[resources/music](https://github.com/SiriYXR/SeniorCourse/tree/master/Sokoban_EGE/resources/music)|音频文件|
+
+<br>
+
+运行效果图：<br>
 
 <div align=center>
   <img src="https://github.com/SiriYXR/SeniorCourse/blob/master/doc/README/sokoban_ege/1.jpg"/>
